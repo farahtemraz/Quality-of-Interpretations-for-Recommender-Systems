@@ -5,10 +5,12 @@ from .emf_model import EMFModel
 from .autoencoder_model import ExplAutoencoderTorch
 
 from .emf_model import PyTorchModel
+from .item2vec_model import Item2Vec
 
 __all__ = ['ALS',
            'BPR',
            'GMFModel',
            'EMFModel',
            'PyTorchModel',
-           'ExplAutoencoderTorch']
+           'ExplAutoencoderTorch', 
+           'Item2Vec']

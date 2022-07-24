@@ -35,6 +35,7 @@ class Evaluator:
         :param recommendations: dataframe, columns = ['userId', 'itemId', 'rank']
         :return: hit rate.
         """
+        # test in top n di feha el merge between el recommendations generated and ythe hidden test set 3ashan neshof which recommendations where actually seen and given a good rating by the user to test how good the recommendation is
         test_in_top_n = self.get_hits(recommendations)
         # count hits per user
         hits_per_user = self.count_positives(test_in_top_n)

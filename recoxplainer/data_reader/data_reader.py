@@ -27,8 +27,8 @@ class DataReader:
                                         names=self.names,
                                         skiprows=self.skiprows,
                                         engine='python')
-            self._num_item = int(self._dataset[['itemId']].nunique())
-            self._num_user = int(self._dataset[['userId']].nunique())
+            self._num_item = int(self._dataset[['itemId']].nunique()) #counting number of  unique items in the dataset
+            self._num_user = int(self._dataset[['userId']].nunique()) # #counting number of  unique users in the dataset
 
         return self._dataset
 

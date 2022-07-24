@@ -33,7 +33,7 @@ base:
       cuda: False
       optimizer_name: 'adam'
     als:
-      learning_rate: 0.1
+      learning_rate: 0.5
       latent_dim: 100
       epochs: 10
       reg_term: 0.001

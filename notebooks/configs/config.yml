@@ -13,6 +13,10 @@ base:
     filepath_or_buffer: 'datasets/ml-1m/ratings.dat'
     sep: '::'
     names: [ 'userId', 'itemId', 'rating', 'timestamp' ]
+  books:
+    filepath_or_buffer: 'datasets/books-crossing/BX-Book-Ratings.csv'
+    sep: ';'
+    names: [ 'User-ID', 'ISBN', 'Book-Ratings' ]
   model:
     gmf:
       learning_rate: 0.005

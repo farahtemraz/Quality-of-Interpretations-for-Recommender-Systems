@@ -8,6 +8,8 @@ class Recommender(GenericRecommender):
     def __init__(self, dataset_metadata, model, top_n: int = 10):
         super(Recommender, self).__init__(dataset_metadata, model, top_n)
 
+    # we give the model the list of the unrated items of the user and predict how the user would rate those items
+    
     def get_predictions(self,
                         user_id: int,
                         target_item_id: list, ):
@@ -37,6 +39,8 @@ class Recommender(GenericRecommender):
 
         if user_ratings is None:
             user_ratings = self.get_rated(user_id=user_id)
+            
+        # a list of the items the user did not rate
 
         unrated_item_id = self.get_unrated(user_ratings['itemId'])
 
